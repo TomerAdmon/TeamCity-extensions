@@ -25,7 +25,6 @@ function TakeScreenshot($VMname)
     Try
     {
         $webclient.DownloadFile($urlpath ,$file)
-        write-host "##teamcity[publishArtifacts '$file']"
     }
     Catch
     {
